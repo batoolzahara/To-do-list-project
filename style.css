@@ -1,0 +1,144 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Manrope:wght@300&family=Poppins:wght@200;400&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;;
+
+}
+body
+{
+background-color:rgba(211, 211, 211, 0.301);
+}
+.container
+{
+width:100%;
+ min-height:100vh;
+padding:10px;
+}
+.to-do-list-wrappper
+{
+width:100%;
+max-width:540px;
+background-color:#fff;
+margin:100px auto 20px;
+padding:40px 30px 70px;
+border-radius:15px;
+box-shadow:2px 2px 3px rgba(208, 208, 255, 0.699),-2px -2px 3px #d2d2ffce;
+
+}
+.heading-of-to-do
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:2rem;
+
+}
+.heading-of-to-do i
+{
+margin-left:30px;
+font-size:30px;
+color:blue;
+}
+.input-in-list
+{
+display:flex;
+align-items:center;
+justify-content:space-between;
+background-color:#edeef0;
+border-radius:30px;
+padding-left:20px;
+}
+.input-in-list input
+{
+border:none;
+outline:none;
+background:transparent;
+flex:1;
+padding-top:15px;
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;
+font-size:19px;
+}
+.input-in-list button
+{
+border:none;
+outline:none;
+background-color:blue;
+color:#ffff;
+padding-left:30px;
+padding-right:30px;
+padding-top:15px;
+padding-bottom:10px;
+font-size:19px;
+border-radius:30px;
+cursor: pointer;
+}
+.input-users
+{
+margin-top:1rem;
+}
+.input-users ul li{
+    list-style:none;
+    padding-top:17px;
+    padding-left:29px;
+    font-size:19px;
+    position:relative;
+    cursor:pointer;
+}
+.input-users ul li::before
+{
+content:"";
+position:absolute;
+width:20px;
+height:20px;
+border-radius:50%;
+top:20px;
+left:-5px;
+background-image:url('images/circle-removebg-preview.png');
+background-size:cover;
+background-position:center;
+}
+
+#list-container li.checked
+{
+text-decoration:line-through;
+color:#555;
+}
+.input-users ul li.checked::before
+{
+    content:"";
+    position:absolute;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    top:11px;
+    left:-9px;
+    background-image:url('images/tick-removebg-preview.png');
+    background-size:cover;
+    background-position:center;
+}
+/*Span tag for cross icon*/
+ul li span
+{
+position:absolute;
+right:0;
+width:30px;
+height:30px;
+color:blue;
+cursor:pointer;
+padding-left:10px;
+padding-right:10px;
+padding-top:7px;
+padding-bottom:7px;
+border-radius:50%;
+top:10px;
+}
+ul li span:hover
+{
+background-color:#edeef0;
+}
